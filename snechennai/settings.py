@@ -47,7 +47,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.humanize',  # for humanize
-    'debug_toolbar',  # for django debug
+    # 'debug_toolbar',  # for django debug
 ]
 
 MIDDLEWARE = [
