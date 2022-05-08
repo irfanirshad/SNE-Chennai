@@ -1,0 +1,78 @@
+{% extends 'base.html' %} 
+
+{% load static %}
+
+{% block title%} | About Us {% endblock %}
+
+
+{% block content %}
+<section id="showcase-inner" class="py-5 text-white">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-12">
+          <h1 class="display-4"> Our Values </h1>
+          <p class="lead">
+              Once a Client, Always a Client. Since 1997.
+              We build lifetime relationships.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Breadcrumb -->
+  <section id="bc" class="mt-3">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="{% url 'index' %}">
+              <i class="fas fa-home"></i> Home</a>
+          </li>
+          <li class="breadcrumb-item active"> About Us</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <section id="about" class="py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <h2>About SN Enterprises</h2>
+          <p class="mt-4">We are one of the upcoming commercial property consultants located in Chennai. We specialize in rentals of office spaces & warehouses in and around Chennai, we currently manage an active database of more than 10,000 properties in office space, 500 properties in warehouse / factory / commercial land, guest houses & business centre's. We have been in this business for the past 11 Years and are well known for our highest standards of Service, Trustworthiness, Transparency and Professionalism.
+            </p>
+          <img src="static/img/about4.jpg" alt="">
+          <p class="mt-4">We at S N Enterprises strongly believe that "Once a Client is Always a Client" and have a strong vision and mission to achieve customer satisfaction. We do periodically update our property database and employees so as to meet the current needs of our customers. We build a lifetime relationship with our customers and treat everyone with care, respect & fairness.</p>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="{% static 'img/realtor3.jpg' %}" alt="Seller of the month">
+            <div class="card-body">
+              <h5 class="card-title">Seller Of The Month</h5>
+              <h6 class="text-secondary">Sakthivel</h6>
+              <p class="card-text">Sakthivel is the top selling realtor at SN Enterprises with over 100,000 sqft sold this year. He has hereby earned top rated status for consistently providing best customer service. 
+                <a href="{% url 'team' %}" class="btn btn-secondary text-white btn-lg">Click to view our Team</a> 
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work -->
+  <section id="work" class="bg-dark text-white text-center">
+    <h2 class="display-4">We Work For You</h2>
+    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem velit aperiam, unde aliquid at similique!</h4>
+    <hr>
+    <a href="{% url 'listings' %}" class="btn btn-secondary text-white btn-lg">View Our Featured ListingsView Our Featured Listings</a>
+    <a href="{% url 'listings' %}" class="btn btn-secondary text-white btn-lg">View Our Featured Listings View Our Featured Listings</a>
+  </section>
+
+  
+      </div>
+    </div>
+  </section>
+
+
+{% endblock %}

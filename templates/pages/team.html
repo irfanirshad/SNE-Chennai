@@ -1,0 +1,110 @@
+{% extends 'base.html' %} 
+
+{% load static %}
+
+{% block content %}
+
+
+<!-- Breadcrumb -->
+<section id="bc" class="mt-3">
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="{% url 'index' %}">
+            <i class="fas fa-home"></i> Home</a>
+        </li>
+        <li class="breadcrumb-item active"> Team</li>
+      </ol>
+    </nav>
+  </div>
+</section>
+
+<section id="about" class="py-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <h2>Meet our winning Team</h2>
+        <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, pariatur!</p>
+        <img src="{% static 'img/about.jpg' %}" alt="">
+        <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis esse officia repudiandae ad saepe ex, amet
+          neque quod accusamus rem quia magnam magni dolorum facilis ullam minima perferendis? Exercitationem at quaerat
+          commodi id libero eveniet harum perferendis laborum molestias quia.</p>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Team -->
+
+<section id="team" class="py-5">
+    <div class="container">
+      <h2 class="text-center">Our Team</h2>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <img src="{% static 'img/realtor00.jpg' %}" alt="" class="rounded-circle mb-3">
+          <h4>Ameen Aziz</h4>
+          <p class="text-success">
+            <i class="fas fa-award text-success mb-3"></i> Director - Associate Broker </p>
+          <hr>
+          <p>
+            <i class="fas fa-phone"></i> (+91)-984-114-0122</p>
+          <p>
+            <i class="fas fa-envelope-open"></i> snenterpriseschennai200@gmail.com </p>
+        </div>
+
+        <div class="col-md-4">
+          <img src="{% static 'img/realtor6.jpg' %}" alt="" class="rounded-circle mb-3">
+          <h4>Irfan</h4>
+          <p class="text-success">Administration - Associate Broker</p>
+          <hr>
+          <p>
+            <i class="fas fa-phone"></i> (+91)-895-340-2532</p>
+          <p>
+            <i class="fas fa-envelope-open"></i> irfansnechennai@gmail.com</p>
+        </div>
+
+
+        <div class="col-md-4">
+            <img src="{% static 'img/realtor1.jpg' %}" alt="" class="rounded-circle mb-3">
+            <h4>Saleem B</h4>
+            <p class="text-success">Team Lead </p>
+            <hr>
+            <p>
+              <i class="fas fa-phone"></i> (+91)-984-135-8186 </p>
+            <p>
+              <i class="fas fa-envelope-open"></i> irfansnechennai@gmail.com </p>
+          </div>
+
+
+        <div class="col-md-4">
+          <img src="{% static 'img/viji.jpg' %}" alt="" class="rounded-circle mb-3">
+          <h4>Vijaykanth</h4>
+          <p class="text-success">Head - IT Department </p>
+          <hr>
+          <p>
+            <i class="fas fa-phone"></i> (+91)-909-422-5393</p>
+          <p>
+            <i class="fas fa-envelope-open"></i> jenny@btrealestate.co</p>
+        </div>
+
+        <div class="col-md-4">
+          <img src="{% static 'img/realtor1.jpg' %}" alt="" class="rounded-circle mb-3">
+          <h4>Vijay Baskar</h4>
+          <p class="text-success"> Head - Land Acquisitions </p>
+          <hr>
+          <p>
+            <i class="fas fa-phone"></i> (+91)-909-422-5393</p>
+          <p>
+            <i class="fas fa-envelope-open"></i> jenny@btrealestate.co</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+{% endblock %}
