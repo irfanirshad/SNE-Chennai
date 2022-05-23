@@ -47,7 +47,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.humanize',  # for humanize
-    # 'debug_toolbar',  # for django debug
+    'debug_toolbar',  # for django debug
 ]
 
 MIDDLEWARE = [
@@ -153,3 +153,11 @@ MEDIA_URL = '/media/'
 MESSAGE_TAGS = {
     messages.ERROR: 'danger'
 }
+
+# Email config
+# add code here for that 
+
+try:
+    from .local_settings import *
+except ImportError:
+    pass
